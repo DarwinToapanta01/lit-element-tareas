@@ -2,34 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>LitElement Binding Task</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #e9ecef;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      color: #343a40;
-    }
-
-    h1 {
-      color: #0056b3;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPE Confirm Modal</title>
 </head>
 
 <body>
-  <h1>DARWIN ANDRES TOAPANTA PAEZ </h1>
-  <p>font-size-adjuster: Cambiar el tamaño de fuente de un texto usando un slider.</p>
-  <font-size-adjuster></font-size-adjuster>
+  <h1>Ejemplo de Modal de Confirmación ESPE</h1>
+
+  <button id="openModalButton">Abrir Modal de Confirmación</button>
+
+  <espe-confirm-modal id="myConfirmModal" title="Eliminar Elemento"
+    message="¿Realmente deseas eliminar este elemento de forma permanente? Esta acción no se puede deshacer."
+    confirmText="Sí, eliminar" cancelText="No, cancelar">
+  </espe-confirm-modal>
+
+  <script>
+    const modal = document.getElementById('myConfirmModal');
+    const openButton = document.getElementById('openModalButton');
+
+    if (modal && openButton) {
+      openButton.addEventListener('click', () => {
+        modal.isOpen = true;
+      });
+
+      modal.addEventListener('modal-confirmado', (e) => {
+        console.log('Modal confirmado:', e.detail);
+        alert('Acción confirmada!');
+      });
+
+      modal.addEventListener('modal-cancelado', (e) => {
+        console.log('Modal cancelado:', e.detail);
+        alert('Acción cancelada.');
+      });
+    } else {
+      console.warn("No se encontraron los elementos 'myConfirmModal' o 'openModalButton'.");
+    }
+  </script>
 </body>
 
 </html>
