@@ -77,6 +77,20 @@ modal-cancelado:
 - Contiene detail: { action: 'canceled' }.
 - Aplicación de Comunicación Intercomponente: Similar a modal-confirmado, permite que la aplicación reaccione a la cancelación por parte del usuario.
 
+## ⚙️ Ventajas de LitElement frente a JavaScript puro
+
+- Simplifica la creación de Web Components con manejo automático de propiedades reactivas.
+- Permite encapsular estilos y templates de forma clara y organizada.
+- Mejora el rendimiento con actualizaciones eficientes al DOM.
+- Facilita la reutilización y mantenimiento del código.
+- Integra soporte nativo para plantillas declarativas y eventos personalizados.
+
+## 👍Validación y Accesibilidad
+
+- Se implementaron atributos `aria-label`, `role="dialog"`, y soporte para teclado con `tabindex` y escucha de tecla Escape para cerrar el modal.
+- Esto mejora la accesibilidad para usuarios con lectores de pantalla y facilita la navegación por teclado.
+- No se implementaron validaciones de formulario en este componente porque es un modal de confirmación simple.
+
 
 ## 📁 Estructura del Proyecto
 ├── components/
