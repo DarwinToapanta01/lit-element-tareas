@@ -103,3 +103,32 @@ En este proyecto, el componente <espe-confirm-modal> utiliza un estado dinámico
 ├── package.json
 ├── webpack.config.js
 └── README.md
+
+##  🏁 Ejecución del proyecto
+
+A continuación se muestra la evidencia visual del componente en funcionamiento:
+
+### 🔹 Página principal del proyecto
+Se visualiza un botón que abre el modal de confirmación personalizado.
+
+<p align="center">
+  <img src="images/startproyect1.png" alt="Página principal con botón para abrir el modal" width="600"/>
+</p>
+
+---
+
+### 🔹 Modal de confirmación activo
+Al hacer clic en el botón, se muestra el modal con diseño institucional, encabezado con el logo de la ESPE y los botones de acción.
+
+<p align="center">
+  <img src="images/startproyect2.png" alt="Modal de confirmación con estilos de la ESPE" width="600"/>
+</p>
+
+---
+
+### 🔹 Consola del navegador
+Se evidencian los eventos personalizados `modal-confirmado` y `modal-cancelado`, lo cual demuestra la correcta comunicación entre el componente y su entorno.
+
+<p align="center">
+  <img src="images/console.png" alt="Eventos emitidos por el componente registrados en la consola" width="600"/>
+</p>
