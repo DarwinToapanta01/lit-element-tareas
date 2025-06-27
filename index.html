@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESPE Confirm Modal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', 'Roboto', sans-serif;
+      background-color: #f2f2f2;
+      color: #003C71;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #003C71;
+      margin-bottom: 2rem;
+    }
+
+    #openModalButton {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #003C71;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #openModalButton:hover {
+      background-color: #002e5a;
+    }
+
+    espe-confirm-modal {
+      font-family: inherit;
+    }
+  </style>
 </head>
 
 <body>
+
   <h1>Ejemplo de Modal de Confirmación ESPE</h1>
 
   <button id="openModalButton">Abrir Modal de Confirmación</button>
@@ -39,6 +78,7 @@
       console.warn("No se encontraron los elementos 'myConfirmModal' o 'openModalButton'.");
     }
   </script>
+
 </body>
 
 </html>
