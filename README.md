@@ -2,8 +2,6 @@
 
 **Nombre:** DARWIN ANDRES TOAPANTA PAEZ  
 **Docente:** PAULO CESAR GALARZA SANCHEZ 
----
-
 **Componente:** `<espe-confirm-modal>`  
 **Rama:** `tarea2-personalizar-comportamientos`  
 
