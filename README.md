@@ -19,6 +19,11 @@ Personalizar el comportamiento de un Web Component utilizando **LitElement**, in
 - Buenas prácticas de desarrollo evitando patrones generados por IA
 
 ---
+## ✅ Manejo de propiedades reactivas
+En este proyecto no se utilizaron decoradores @property para definir las propiedades reactivas del componente.
+En su lugar, se implementó el método estático clásico static get properties() que retorna un objeto con las propiedades del componente y sus tipos, siguiendo el patrón recomendado para compatibilidad y claridad:
+![Definición de propiedades reactivas usando static get properties()](images/properties.png)
+---
 
 ## 🧩 Descripción del Componente
 
@@ -63,3 +68,14 @@ modal-cancelado:
 - Se dispara cuando el usuario hace clic en el botón de "Cancelar" o en el botón de cierre (&times;), o presiona la tecla Escape.
 - Contiene detail: { action: 'canceled' }.
 - Aplicación de Comunicación Intercomponente: Similar a modal-confirmado, permite que la aplicación reaccione a la cancelación por parte del usuario.
+
+
+## 📁 Estructura del Proyecto
+├── components/
+│   └── espe-confirm-modal.js
+├── node_modules/
+├── index.html
+├── package-lock.json
+├── package.json
+├── webpack.config.js
+└── README.md
