@@ -77,6 +77,10 @@ modal-cancelado:
 - Contiene detail: { action: 'canceled' }.
 - Aplicación de Comunicación Intercomponente: Similar a modal-confirmado, permite que la aplicación reaccione a la cancelación por parte del usuario.
 
+## 💻 Personalización de Estados Dinámicos
+
+En este proyecto, el componente <espe-confirm-modal> utiliza un estado dinámico principal llamado isOpen que controla la visibilidad del modal. Este estado es reactivo y al cambiar su valor, el componente se actualiza automáticamente para mostrar u ocultar el modal en la interfaz.
+
 ## ⚙️ Ventajas de LitElement frente a JavaScript puro
 
 - Simplifica la creación de Web Components con manejo automático de propiedades reactivas.
