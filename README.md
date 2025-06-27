@@ -79,6 +79,7 @@ modal-cancelado:
 
 
 ## 📁 Estructura del Proyecto
+/
 ├── components/
 │   └── espe-confirm-modal.js
 ├── node_modules/
@@ -87,3 +88,4 @@ modal-cancelado:
 ├── package.json
 ├── webpack.config.js
 └── README.md
+---
