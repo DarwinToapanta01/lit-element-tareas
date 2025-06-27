@@ -20,9 +20,17 @@ Personalizar el comportamiento de un Web Component utilizando **LitElement**, in
 
 ---
 ## ✅ Manejo de propiedades reactivas
-En este proyecto no se utilizaron decoradores @property para definir las propiedades reactivas del componente.
-En su lugar, se implementó el método estático clásico static get properties() que retorna un objeto con las propiedades del componente y sus tipos, siguiendo el patrón recomendado para compatibilidad y claridad:
-![Definición de propiedades reactivas usando static get properties()](images/properties.png)
+
+En este proyecto **no se utilizaron decoradores `@property`** para definir las propiedades reactivas del componente.
+
+En su lugar, se implementó el método estático clásico `static get properties()` que retorna un objeto con las propiedades del componente y sus tipos.
+
+Este patrón es recomendado para mantener compatibilidad y claridad en el código.
+
+<p align="center">
+  <img src="images/properties.png" alt="Definición de propiedades reactivas usando static get properties()" width="400"/>
+</p>
+
 ---
 
 ## 🧩 Descripción del Componente
